@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/27 12:40:07 by dodordev          #+#    #+#             */
-/*   Updated: 2024/03/05 17:28:25 by dodordev         ###   ########.fr       */
+/*   Updated: 2024/03/12 10:57:18 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ check server availability or pid validity!"
 Client might've been killed!\n"
 # define ERR_EXIT_SGU2 "Couldn't change SIGUSR2 behaviour\n"
 # define ERR_EXIT_SGU1 "Couldn't change SIGUSR1 behaviour\n"
+# define TMOU "Timeout!\n"
 
 // helpers.c
 int		ft_atoi(char *str);
