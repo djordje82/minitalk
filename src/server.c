@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/27 12:28:47 by dodordev          #+#    #+#             */
-/*   Updated: 2024/03/12 16:05:13 by dodordev         ###   ########.fr       */
+/*   Updated: 2024/03/14 16:44:07 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	sig_print(int signum, siginfo_t *info, void *ucontent);
 
 static void	print_header(int pid)
 {
-	write(1, "\033[38;5;42m\n\
+	write(1, "\033[6m\033[38;5;42m\n\
                                                               \n \
 ███╗   ███╗██╗███╗   ██╗██╗████████╗ █████╗ ██╗     ██╗  ██╗ \n \
 ████╗ ████║██║████╗  ██║██║╚══██╔══╝██╔══██╗██║     ██║ ██╔╝ \n \
