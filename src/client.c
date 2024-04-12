@@ -6,7 +6,7 @@
 /*   By: dodordev <dodordev@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/27 12:29:17 by dodordev          #+#    #+#             */
-/*   Updated: 2024/03/12 10:59:55 by dodordev         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:29:50 by dodordev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	g_control = 0;
 
-static void	waitforanswer(void)
+static void	wait_for_answer(void)
 {
 	int	i;
 
@@ -46,7 +46,7 @@ static void	send_char_to_server(unsigned char c, __pid_t server_pid)
 			if (kill(server_pid, SIGUSR2) == -1)
 				exit_on_error(ERR_EXIT_SGU2);
 		}
-		waitforanswer();
+		wait_for_answer();
 		bit >>= 1;
 	}
 }
